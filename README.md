@@ -12,8 +12,8 @@
 
 #### Example usage:
 
--
--
+- https://timestamp-microservice.allymurray.com/api/timestamp/2020-08-20
+- https://timestamp-microservice.allymurray.com/api/timestamp/1601510400000
 
 #### Example output:
 
