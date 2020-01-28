@@ -5,6 +5,11 @@ timestampRouter.get('/:dateString?', (request, response) => {
   const date = dateString
     ? new Date(Number(dateString) || dateString)
     : new Date();
+
+  if (isNaN(date)) {
+    return response.json({ error: date.toUTCString() });
+  }
+
   response.json({ unix: date.getTime(), utc: date.toUTCString() });
 });
 

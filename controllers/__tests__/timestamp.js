@@ -75,8 +75,7 @@ describe('when the timestamp endpoint is called with a valid', () => {
 describe('when the timestamp endpoint is called with a invalid string', () => {
   test('the unix timestamp should be null and the utc string should contain "Invalid Date"', async () => {
     const expectedResult = {
-      unix: null,
-      utc: 'Invalid Date'
+      error: 'Invalid Date'
     };
 
     const result = await api
